@@ -1,0 +1,54 @@
+.possibility {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* possibility_image */
+.possibility .possibility_image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.possibility .possibility_image img {
+    width: 100%;
+    height: 100%;
+}
+
+/* possibility_content */
+.possibility .possibility_content {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.possibility .possibility_content p a {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--color-text);
+    font-weight: 600;
+
+}
+.possibility .possibility_content h1 {
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 45px;
+    margin: 1rem 0;
+}
+.possibility .possibility_content p:nth-child(3) {
+    color: var(--color-text);
+}
+
+/* Media Query */
+@media screen and ( max-width : 960px) {
+    .possibility {
+        flex-direction: column;
+    }
+}

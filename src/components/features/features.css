@@ -1,0 +1,30 @@
+.features {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex: 1;
+    gap: 4rem;
+}
+@media screen and (max-width: 900px) {
+    .features {
+        gap: 3rem;
+        flex-direction: column;
+    }   
+}
+.features .features_heading {
+    flex: 2;
+}
+.features .features_heading h1 {
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+.features .features_heading p {
+    color: var(--color-subtext);
+}
+
+.features .features_container {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,147 @@
+.navbar{
+    color: #fff;
+    user-select: none;
+    padding: 1rem; 
+}
+
+
+
+/* horizontal */
+.navbar-horizontal {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: .5rem;
+    cursor: pointer;
+}
+.links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.links>p {
+    text-transform: capitalize;
+    margin: 0;
+    cursor: pointer;
+}
+.links p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+.links p:hover {
+    transition: 400ms;
+    background-color: #133f5c;
+    border-radius: 30px;
+}
+.sign button {
+    outline: none;
+    color: #ffff;
+    background-color: #ff4820;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+@media screen and (max-width :1100px) {
+    .links p {
+        padding: 1rem;
+    }
+}
+@media screen and (max-width : 650px) {
+    .sign button {
+        display: none;
+    }
+}
+
+
+
+/* icone */
+.icon {
+    cursor: pointer;
+    padding-left: 2rem;
+    color: #fff;
+}
+
+
+
+/*  vertical  */
+.navbar-vertical {
+    position: absolute;
+    background-color: #10c6e3;
+    color: white;
+    top: 60px;
+    right: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 13rem;
+    border-radius: 15px;
+    z-index: 999;
+}
+.navbar-vertical .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.menu>p { 
+    padding: .75rem 1rem;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+.menu p:hover {
+    padding-left: 2rem;
+    transition: 400ms;
+    background-color: #10c6e3;
+    border-radius: 15px;
+}
+.navbar-vertical .menu-sign button {
+    outline: none;
+    position: relative;
+    color: #ffff;
+    background-color: #ff4820;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 20px;
+    width: 100%;
+    border-radius: 0 0 15px 15px;
+} 
+.navbar-vertical .menu-sign button:hover {
+    color: #ffff;
+    background-color: #ff4820;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+/* media  */
+@media screen and (max-width: 900px) {
+    .links {
+        display:none;
+    }
+    .icon {
+        display:block ;
+    }
+    .navbar-vertical {
+    
+        display:flex ;
+    }
+}
+@media screen and (min-width:900px) {
+    .links {
+        display: flex;
+    }
+    .icon {
+        display:none;
+    }
+    .navbar-vertical {
+        display:none ;
+    }
+}

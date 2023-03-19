@@ -1,0 +1,50 @@
+.feature {
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    width: 100%;
+    flex: 1;
+}
+@media screen and (max-width: 1050px) {
+    .feature {
+        flex-direction: column;
+        gap: 0;
+        padding-bottom: 1.5rem;
+    }   
+}
+@media screen and (max-width: 960px) {
+
+}
+.feature .feature_title {
+    position: relative;
+    margin-top: 6px;
+    flex: 2;
+}
+.feature .feature_title .wave {
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background-color: #ec9279;
+    top: -5px;
+    left: 1px;
+}
+.feature .feature_title h1 {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    min-width: 150px;
+    max-width: 250px;
+    letter-spacing: .5px;
+}
+
+
+
+.feature .feature_text {
+    flex: 3;
+}
+.feature .feature_text p {
+    font-size: 14px;
+    color: var(--color-text);
+    margin: 0;
+}

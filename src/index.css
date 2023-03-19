@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+  --font-family: 'Manrope', sans-serif;
+
+  --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+  --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
+  
+  --color-bg: #040C18;
+  --color-footer : #031B34;
+  --color-blog: #042c54;
+  --color-text: #81AFDD;
+  --color-subtext: #FF8A71;
+}
+
+
+
+/* 
+* Media Query
+For Mobile devices: 320px-480px.
+For Tablets or iPad: 480px - 768px.
+For Laptop or small-size screen: 768px -1024px.
+For Desktop or large-size screen: 1024px -1200px.
+For Extra-large size device: 1200px and more. 
+
+* Basic syntax 
+@media screen and (min-width: 1024px) {
+  .AAA {
+    background-color: #63c971;
+  }
+}
+@media (min-width: 600px) and (max-width: 768px) {
+  .AAA {
+    background-color: #63c971;
+  }
+}
+
+* Bootstrap 
+sm: 540px,
+md: 720px,
+lg: 960px,
+xl: 1140px,
+xxl: 1320px
+
+*/

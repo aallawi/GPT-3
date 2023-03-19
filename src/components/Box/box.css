@@ -1,0 +1,21 @@
+.box .box_title {
+    position: relative;
+}
+.box .box_title .wave {
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background-color: #ec9279;
+    top: -5px;
+    left: 1px;
+}
+.box .box_title h1 {
+    position: relative;
+    font-size: 18px;
+    min-width: 120px;
+}
+.box .box_text p {
+    font-size: 14px;
+    color: var(--color-text);
+    margin: 0;
+}
